@@ -32,12 +32,6 @@
 В терминале:
 
 ```bash
-opencode plugin add 'github:Homavi88/opencode#cursor/token-quota-desktop-caf9'
-```
-
-Если PR уже смержен в `main`:
-
-```bash
 opencode plugin add github:Homavi88/opencode
 ```
 
