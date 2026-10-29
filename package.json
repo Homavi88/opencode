@@ -1,0 +1,48 @@
+{
+  "name": "opencode-token-quota",
+  "version": "1.0.0",
+  "description": "OpenCode Desktop plugin: 15M / 4h token quota badge in the chat composer",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "plugin",
+    "tokens",
+    "quota",
+    "desktop"
+  ],
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./rpc": "./src/rpc.ts",
+    "./tui": "./src/tui.tsx",
+    "./gui-experimental": "./dist/gui-experimental.cjs"
+  },
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "test": "node --experimental-strip-types --test src/**/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "solid-js": "^1.9.9",
+    "typescript": "^5.8.2",
+    "vite": "^7.0.0",
+    "vite-plugin-solid": "^2.11.0"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.2.0",
+    "solid-js": ">=1.9.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
